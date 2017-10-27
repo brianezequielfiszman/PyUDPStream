@@ -4,7 +4,7 @@ from _socket import SOCK_DGRAM, AF_INET
 import threading
 
 UDP_IP = '127.0.0.1'
-UDP_PORT = input('Enter the port you will use')
+UDP_PORT = int(input('Enter the port you will use: '))
 udp = socket.socket(AF_INET, SOCK_DGRAM)
 
 
