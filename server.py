@@ -3,7 +3,7 @@ import pyaudio
 from _socket import SOCK_DGRAM, AF_INET
 
 UDP_IP = '127.0.0.1'
-UDP_PORT = input('Enter the port you will use')
+UDP_PORT = int(input('Enter the port you will use'))
 ADDRESS = (UDP_IP, UDP_PORT)
 
 
