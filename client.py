@@ -7,16 +7,10 @@ UDP_IP = '127.0.0.1'
 UDP_PORT = int(input('Enter the port you will use: '))
 udp = socket.socket(AF_INET, SOCK_DGRAM)
 
-
-#  def callback(in_data, frame_count, time_info, status):
-#      return (in_data, pyaudio.paContinue)
-
-
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 44100
 CHUNK = 4096
-
 
 audio = pyaudio.PyAudio()
 stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE,
